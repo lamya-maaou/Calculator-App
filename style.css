@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    /*those 2 properties are used with the flexbox*/
+    /*move the content horizontally to the center*/
+    justify-content: center;
+    /*move the content vertically to the center*/
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+#calculator{
+    font-family:  Arial, sans-serif;
+    /* hue:type of color in degree
+    saturation: the intensity of it, 100% means full color
+    lightness:the brightness
+    0% lightness : black
+    100% : white
+    50% : the pure color without any tint or shade*/
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    /*hides any content that exceeds the container's width*/
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 25px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    /*defines the column structure of the grid
+    the container is divided into 4 parts, and each column gets one part*/
+    grid-template-columns: repeat(4, 1fr);
+    /*space between the grid items*/
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*hover:when the user's pointer is hovering over an element*/
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+/*when the button is clicked*/
+button:active{
+   background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+ }
+
+ .operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+ }
+ .operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+ }
